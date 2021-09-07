@@ -1,0 +1,26 @@
+create database data1;
+use data1;
+
+//Student table//
+
+create table table1(id int NOT NULL AUTO_INCREMENT, 
+name varchar(50),email varchar(50),password varchar(50),
+mobile varchar(50), city varchar(20),PRIMARY KEY (id,email));
+
+select * from table1;
+
+
+//Admin table//
+create table table2(id int NOT NULL AUTO_INCREMENT, 
+name varchar(50),email varchar(50),password varchar(50),
+mobile varchar(50), city varchar(20),PRIMARY KEY (id,email));
+
+select * from table2;
+
+
+//Notices table//
+create table table3(id int NOT NULL AUTO_INCREMENT, 
+date varchar(20),subject varchar(50),notice varchar(50),
+PRIMARY KEY (id));
+
+select * from table3;
